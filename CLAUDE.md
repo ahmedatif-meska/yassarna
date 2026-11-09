@@ -60,6 +60,27 @@ screen. What holds across files:
 - `npm run reset-project` moves the starter code to `example/` and leaves a
   blank `src/app`.
 
+## Screen spec: what we build
+
+**Yassarna — Sign-up to First Lesson**: https://claude.ai/artifact/WUNUWTidQHhEk5HYPBpZRh
+
+A design canvas of 33 phone screens (390×844, light and dark) built on the
+design system. It is the spec for every screen, flow and piece of copy. Read
+`project/canvas.json` for the screen list and flow, then the screen's
+`project/<Name>.dc.html` (and `project/screens.css`) before building it. Its
+meanings and explanations are sample copy: real content must be reviewed and
+sourced.
+
+- 01–06 Start and account: opening animation, language, welcome (start
+  without an account / create account / I have an account), email, 6-digit
+  code, account ready.
+- 07–20 First lesson with an account (Al-Kawthar): preview, flashcard, true or
+  false, multiple choice, tap the word, complete the meaning, matching,
+  optional speed round, repair (a missed word returns), result, Home.
+- 21–28 First lesson without an account (Al-Ikhlas), same activity types.
+- 29–33 Guest ending: result, save progress by email + code, saved, or
+  continue on this device to a guest Home.
+
 ## Design system: the single source for all UI
 
 **Yassarna Design System**: https://claude.ai/artifact/V2sThMkg5W4Nu6nNqRhfGw
