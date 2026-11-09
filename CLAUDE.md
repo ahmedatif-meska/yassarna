@@ -1,13 +1,9 @@
 # Yassarna (يَسَّرْنَا)
 
 A mobile app that teaches the meanings of selected Quranic words inside their
-ayat, in short Duolingo-style lessons, for Arabic-speaking learners aged 15+.
-The name comes from Al-Qamar 54:17. Arabic-first (RTL) with an English
+ayat, in short Duolingo-style lessons, for Arabic-speaking learners. The name
+comes from Al-Qamar 54:17. Arabic-first (RTL) with an English
 interface option.
-
-`yassarna.html` is the original interactive prototype: a reference for flows
-and content, not code to copy. Its colours and fonts are superseded by the
-design system below.
 
 ## How we work
 
@@ -49,8 +45,8 @@ npx expo-doctor              # dependency and config check
 
 Before any UI work, read its `project/README.md` and `project/tokens.json`
 (Artifact tool, `read` with `paths`), and the component's
-`project/components/<Name>/README.md` when building one. Where older code or the
-prototype disagrees, the design system wins.
+`project/components/<Name>/README.md` when building one. Where older code
+disagrees, the design system wins.
 
 - **Tokens, never raw values.** Map its colour tokens to a `{light, dark}` theme
   (`bg`, `surface`, `surface-ayah`, `ink`, `ink-muted`, `primary`, `accent`,
