@@ -34,6 +34,23 @@ npx eas-cli@latest build     # store builds (EAS); `submit` uploads them
 
 No test runner is set up yet (Expo's guide: https://docs.expo.dev/develop/unit-testing/).
 
+## Project services
+
+These are the only repo and backend for this app; never create or use others.
+
+- **GitHub:** https://github.com/ahmedatif-meska/yassarna (`origin`, branch
+  `master`). The repo is public, so nothing secret is ever committed.
+- **Supabase:** organization "Yassarna", project `yassarna`
+  - project ref / `project_id`: `npngbzdhqfioeftcklnw` (pass it to every Supabase MCP tool)
+  - API URL: https://npngbzdhqfioeftcklnw.supabase.co
+  - dashboard: https://supabase.com/dashboard/project/npngbzdhqfioeftcklnw
+  - region eu-west-1, Postgres 17
+- The app reads the API URL and the public (anon/publishable) key from
+  `EXPO_PUBLIC_*` env vars in `.env.local` (git-ignored; plain `.env` is not). The service-role/secret key
+  never goes in the app or the repo.
+- Change the database only through migrations (Supabase MCP `apply_migration`),
+  with row-level security on every table that holds user data.
+
 ## Architecture
 
 The code is still the `create-expo-app` starter; it will be replaced screen by
